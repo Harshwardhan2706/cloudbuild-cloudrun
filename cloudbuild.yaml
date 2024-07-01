@@ -22,3 +22,7 @@ steps:
   - 'managed'
   # Optional: if you want to allow unauthenticated access-
   - '--allow-unauthenticated'
+
+  build:
+  # ... other build configuration options
+  logsBucket: "gs://app_logu"
