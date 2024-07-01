@@ -2,9 +2,7 @@ steps:
 # Step 1: Build the Docker Image
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'asia-east1-docker.pkg.dev/gcp-devops-427507/my-repository/app-image:latest', '.' ]
-  logsBucket: 'gs://app_logu'
-    options:
-      logging: GCS_ONLY
+logsBucket: 'gs://app_logu'
 
 # Step 2: Push the image to the Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
